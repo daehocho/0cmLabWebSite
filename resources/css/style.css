@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+.lt {position: relative;}
+.lt .txt_box {padding: 30px;}
+.lt .d_wrap {margin-bottom: 30px;}
+.lt .d_wrap span {font-size: 18px;}
+.lt .d_wrap span:first-child {margin-right: 15px; position: relative; font-weight: 500;}
+.lt .d_wrap span:first-child::after {content: ''; position: absolute; width: 1px; height: 80%; background-color: #121212; top: 50%; right: -15px; transform: translateY(-50%);}
+.lt .d_wrap span:nth-child(2) {margin-left: 15px; color: #999; font-weight: 400;}
+
+.lt .subject {font-size: 20px; font-weight: 600; margin-bottom: 30px;}
+
+.lt .substance {font-size: 18px; font-weight: 400; color: #666; margin-bottom: 70px;}
+
+.lt .bar {width: 100%; height: 5px; background-color: #ddd; position: relative;}
+.lt .bar .colorbar {background-color: #ef7b26; width: 0; height: 5px; position: absolute; top: 0; left: 0; transition-duration: 0.5s;}
+.lt .a-item:hover .bar .colorbar {width: 100%; transition-duration: 0.5s;}
+
+@media screen and (max-width:1200px) {
+    .owl-theme .owl-nav {display: none;}
+    .lt .d_wrap span {font-size: 16px;}
+    .lt .subject {font-size: 18px;}
+    .lt .substance {font-size: 16px;}
+}
+
+@media screen and (max-width:960px) {
+}
+
+
+@media screen and (max-width:640px) {
+    .lt .d_wrap span {font-size: 15px;}
+    .lt .subject {font-size: 16px;}
+    .lt .substance {font-size: 14px;}
+}
+/* 주요 계약실적*/

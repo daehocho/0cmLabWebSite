@@ -1,0 +1,493 @@
+/*경영이념*/
+#a1 {}
+/* #a1 > img {display: block; margin: 0 auto; position: relative;} */
+#a1 > p {font-size: 24px; font-weight: 700; text-align: center; color:  #121212; margin-top: 10px;}
+#a1 .line {width: 1px; height: 70px; background-color: #ddd; margin: 50px auto;}
+#a1 ul {display: flex; justify-content: space-between;}
+#a1 ul li {display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px dashed #ddd; width: 33.333%;}
+#a1 ul li:last-child {border-right: 0;}
+#a1 ul li img {margin-bottom: 30px;}
+#a1 ul li h1 {font-size: 20px; width: 35px; height: 35px; background-color: #f15a29; border-radius: 50%; text-align: center; line-height: 35px; color: #fff; margin-bottom: 10px;}
+#a1 ul li h2 {font-size: 20px;}
+#a1 ul li h2 span {color: #999; font-weight: 500;}
+#a1 ul li p {font-size: 18px; font-weight: 400; text-align: center;}
+
+@media screen and (max-width: 1200px) {
+	#a1 {padding: 0 2%;}
+	#a1 ul li img {height: 80px;}
+}
+
+@media screen and (max-width: 1100px) {
+	#a1 ul li h1 {width: 30px; height: 30px; line-height: 30px;}
+	#a1 ul li h2 {font-size: 18px;}
+	#a1 ul li p {font-size: 16px;}
+}
+
+@media screen and (max-width: 960px) {
+	#a1 > p {font-size: 16px;}
+	#a1 ul {flex-direction: column;}
+	#a1 ul li {width: 100%; border-right: 0; border-bottom: 1px dashed #ddd; margin-bottom: 30px; padding-bottom: 30px;}
+	#a1 ul li:last-child {border-bottom: 0; margin-bottom: 0; padding-bottom: 0;}
+}
+
+@media screen and (max-width: 640px) {
+	#a1 > img {height: 35px;}
+	#a1 ul li img {margin-bottom: 20px;}
+	#a1 ul li h1 {font-size: 16px; width: 25px; height: 25px; line-height: 25px;}
+	#a1 ul li h2 {font-size: 16px;}
+	#a1 ul li p {font-size: 14px;}
+}
+
+/*경영이념*/
+
+
+
+
+
+/*오시는길*/
+#a3 {}
+#a3 .con h2 {font-size: 30px; position: relative; padding-left: 20px; display: flex; align-items: center;}
+#a3 .con h2::after {content: ''; position: absolute; width: 5px; height: 50%; left: 0; background-color: #f15a29;}
+#a3 .con ul {margin: 10px 0 20px;}
+#a3 .con ul li:first-child {font-size: 20px; font-weight: 500; color: #333; word-break: keep-all;}
+#a3 .con ul li:last-child {display: flex; align-items: center;}
+#a3 .con ul li:last-child img {height: 25px; margin-right: 10px;}
+#a3 .con ul li:last-child p {font-size: 18px; font-weight: 400; color: #333;}
+#a3 .con .map .root_daum_roughmap_landing {border: 1px solid #ddd; border-radius: 20px;}
+#a3 .con .map .root_daum_roughmap .wrap_controllers {display: none;}
+#a3 .con .map .root_daum_roughmap .map_border {display: none;}
+
+#a3 .con1 {margin-bottom: 80px;}
+
+
+@media screen and (max-width: 1200px) {
+	#a3 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#a3 .con h2 {font-size: 24px; padding-left: 15px;}
+	#a3 .con ul li:first-child {font-size: 18px;}
+	#a3 .con ul li:last-child img {height: 20px;}
+	#a3 .con ul li:last-child p {font-size: 16px;}
+
+	#a3 .con1 {margin-bottom: 50px;}
+}
+
+@media screen and (max-width: 640px) {
+	#a3 .con h2 {font-size: 20px;}
+	#a3 .con ul li:first-child {font-size: 16px;}
+	#a3 .con ul li:last-child img {height: 17px;}
+	#a3 .con ul li:last-child p {font-size: 14px;}
+}
+/*오시는길*/
+
+/*사업영역 - 비젼사업부*/
+#b1 {display: flex; justify-content: space-between; align-items: center;}
+#b1 .txtwrap {width: 45%;}
+#b1 .txtwrap h2 {font-size: 24px; font-weight: 600; position: relative; margin-bottom: 30px; padding-bottom: 30px;}
+#b1 .txtwrap h2::after {content: ''; position: absolute; width: 30px; height: 3px; bottom: 0; left: 0%; background-color: #f15a29;}
+#b1 .txtwrap h2 span {font-weight: 700; color: #f15a29;}
+#b1 .txtwrap p {font-size: 18px; font-weight: 400;}
+
+#b1 .slidewrap {width: 50%; padding: 0 40px;}
+
+/* slick slide */
+#b1 .slider {margin-bottom: 20px;}
+#b1 .slick-slide img {width: 100%;}
+#b1 .pager .slick-slide {border: 1px solid #ddd;}
+#b1 .pager button.slick-prev {position: absolute; top: 50%; transform: translateY(-50%); left: 0; border: 0; z-index: 1;}
+#b1 .pager button.slick-prev::before {content: ''; position: absolute; background-image: url('../img/b1_parrow.png'); width: 27px; height: 27px;  background-size: contain; bottom: 50%; transform: translateY(50%); left: -40px;}
+#b1 .pager button.slick-next {position: absolute; bottom: 50%; transform: translateY(50%); right: 0; border: 0; z-index: 1;}
+#b1 .pager button.slick-next::before {content: ''; position: absolute; background-image: url('../img/b1_narrow.png'); width: 27px; height: 27px; background-size: contain; bottom: 50%; transform: translateY(50%); right: -40px;}
+/* slick slide */
+
+@media screen and (max-width: 1200px) {
+	#b1 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#b1 {flex-direction: column;}
+	#b1 .txtwrap {width: 100%; margin-bottom: 30px;}
+	#b1 .txtwrap h2 {text-align: center; font-size: 20px;}
+	#b1 .txtwrap h2::after {left: 50%; transform: translateX(-50%);}
+	#b1 .txtwrap p {font-size: 16px; text-align: center;}
+	#b1 .slidewrap {width: 100%;}
+
+	#b1 .pager button.slick-prev::before {width: 23px; height: 23px;}
+	#b1 .pager button.slick-next::before {width: 23px; height: 23px;}
+}
+
+@media screen and (max-width: 640px) {
+	#b1 .txtwrap h2 {font-size: 18px; margin-bottom: 20px; padding-bottom: 20px;}
+	#b1 .txtwrap p {font-size: 14px;}
+
+	#b1 .pager button.slick-prev::before {width: 20px; height: 20px; left: -30px;}
+	#b1 .pager button.slick-next::before {width: 20px; height: 20px; right: -30px;}
+}
+
+/*사업영역 - 비젼사업부*/
+
+
+/*사업영역 - 로봇&컨트롤사업부*/
+#b2 .con {margin-bottom: 50px;}
+#b2 .con:last-child {margin-bottom: 0;}
+#b2 .con h2 {font-size: 30px; position: relative; display: flex; align-items: center; padding-left: 20px; margin-bottom: 30px;}
+#b2 .con h2::after {content: ''; position: absolute; display: block; width: 10px; height: 10px; background-color: #f15a29; left: 0; transform: rotateZ(45deg); border-radius: 2px;}
+#b2 .con .incon {margin-bottom: 40px;}
+#b2 .con .incon:last-child {margin-bottom: 0;}
+#b2 .con .incon > ul {margin-bottom: 20px;}
+#b2 .con .incon > ul > li {font-size: 18px; font-weight: 400; margin-bottom: 5px;}
+#b2 .con .incon > ul > li:last-child {margin-bottom: 0;}
+#b2 .con .incon > ul > li > ul > li {padding-left: 10px;}
+#b2 .con .incon .btnwrap {margin-bottom: 30px;}
+#b2 .con .incon .btnwrap ul {display: flex;}
+#b2 .con .incon .btnwrap ul li {border: 1px solid #0e2062; border-radius: 22px; margin-right: 10px; transition-duration: 0.3s;}
+#b2 .con .incon .btnwrap ul li:hover {background-color: #0e2062; transition-duration: 0.3s;}
+#b2 .con .incon .btnwrap ul li:last-child {margin-right: 0;}
+#b2 .con .incon .btnwrap ul li a {font-size: 16px; font-weight: 400; color: #0e2062; display: block; padding: 5px 15px; transition-duration: 0.3s;}
+#b2 .con .incon .btnwrap ul li:hover a {color: #fff; transition-duration: 0.3s;}
+#b2 .con .incon .imgwrap ul {display: flex;}
+#b2 .con .incon .imgwrap ul li {width: 24%; border: 1px solid #ddd; margin-right: 20px;}
+#b2 .con .incon .imgwrap ul li:last-child {margin-right: 0;}
+#b2 .con .incon .imgwrap ul li img {width: 100%;}
+#b2 .con3 .incon1 .imgwrap ul li {width: 100%;}
+#b2 .con3 .incon h3 {border: 1px solid #f15a29; display: inline-block; padding: 5px 15px; color: #f15a29; font-size: 18px; font-weight: 500; border-radius: 22px; margin-bottom: 20px;}
+#b2 .con3 .incon3 .imgwrap ul li {width: 100%;}
+#b2 .con4 .incon .imgwrap ul li {width: 100%;}
+
+@media screen and (max-width: 1200px) {
+	#b2 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#b2 .con h2 {font-size: 24px; margin-bottom: 10px;}
+	#b2 .con .incon > ul > li {font-size: 16px;}
+}
+
+@media screen and (max-width: 640px) {
+	#b2 .con h2 {font-size: 20px;}
+	#b2 .con .incon > ul > li {font-size: 14px;}
+	#b2 .con .incon .btnwrap ul li a {font-size: 14px;}
+	#b2 .con .incon .imgwrap ul {flex-wrap: wrap;}
+	#b2 .con .incon .imgwrap ul li {width: 49%; margin-right: 1%; margin-bottom: 1%;}
+
+	#b2 .con3 .incon h3 {font-size: 14px; margin-bottom: 10px;}
+	#b2 .con3 .incon1 .imgwrap ul li {width: 100%;}
+	#b2 .con3 .incon3 .imgwrap ul li {width: 100%;}
+	#b2 .con4 .incon .imgwrap ul li {width: 100%;}
+}
+/*사업영역 - 로봇&컨트롤사업부*/
+
+
+
+/*사업영역 - 레이져사업부*/
+#b3 .con {margin-bottom: 50px;}
+#b3 .con:last-child {margin-bottom: 0;}
+#b3 .con h2 {font-size: 30px; position: relative; display: flex; align-items: center; padding-left: 20px; margin-bottom: 30px;}
+#b3 .con h2::after {content: ''; position: absolute; display: block; width: 10px; height: 10px; background-color: #f15a29; left: 0; transform: rotateZ(45deg); border-radius: 2px;}
+#b3 .con1 .incon {display: flex;}
+#b3 .con1 .incon > ul {width: 50%; background-color: #f5f5f5; display: flex; flex-direction: column; justify-content: center; padding: 0 40px;}
+#b3 .con1 .incon > ul > li {font-size: 18px; font-weight: 400; margin-bottom: 10px; word-break: keep-all;}
+#b3 .con1 .incon > ul > li:last-child {margin-bottom: 0;}
+#b3 .con1 .incon > ul > li > ul {padding-left: 10px;}
+#b3 .con1 .incon img {width: 50%;}
+
+#b3 .con2 .incon {margin-bottom: 40px;}
+#b3 .con2 .incon:last-child {margin-bottom: 0;}
+#b3 .con2 .incon h3 {border: 1px solid #f15a29; display: inline-block; padding: 5px 15px; color: #f15a29; font-size: 18px; font-weight: 500; border-radius: 22px; margin-bottom: 20px;}
+#b3 .con2 .incon ul {margin-bottom: 30px;}
+#b3 .con2 .incon ul li {font-size: 18px; font-weight: 400; margin-bottom: 5px; word-break: keep-all;}
+#b3 .con2 .incon ul li:last-child {margin-bottom: 0;}
+#b3 .con2 .incon .imgwrap {display: flex;}
+#b3 .con2 .incon .imgwrap img {width: 24%; margin-right: 20px;}
+
+#b3 .con3 .incon ul {margin-bottom: 30px;}
+#b3 .con3 .incon > ul > li {margin-bottom: 5px; font-size: 18px; font-weight: 400; word-break: keep-all;}
+#b3 .con3 .incon .imgwrap ul {display: flex;}
+#b3 .con3 .incon .imgwrap ul li {width: 24%; margin-right: 20px;}
+#b3 .con3 .incon .imgwrap ul li img {width: 100%; border: 1px solid #ddd;}
+#b3 .con3 .incon .imgwrap ul li p {background-color: #0e2062; color: #fff; font-weight: 400; font-size: 16px; text-align: center; padding: 5px;}
+
+#b3 .con4 .incon p {font-size: 18px; font-weight: 400; margin-bottom: 30px;}
+#b3 .con4 .incon ul {display: flex; justify-content: space-between; align-items: center;}
+#b3 .con4 .incon ul li {width: 24%; border: 1px solid #ddd;}
+#b3 .con4 .incon ul li img {width: 100%;}
+
+#b3 .con5 .incon {margin-bottom: 40px;}
+#b3 .con5 .incon:last-child {margin-bottom: 0;}
+#b3 .con5 .incon h3 {border: 1px solid #f15a29; display: inline-block; padding: 5px 15px; color: #f15a29; font-size: 18px; font-weight: 500; border-radius: 22px; margin-bottom: 20px;}
+#b3 .con5 .incon ul li {font-size: 18px; font-weight: 400; margin-bottom: 5px; word-break: keep-all;}
+#b3 .con5 .incon ul li:last-child {margin-bottom: 0;}
+
+@media screen and (max-width: 1200px) {
+	#b3 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#b3 .con h2 {font-size: 24px; margin-bottom: 10px;}
+
+	#b3 .con1 .incon {flex-direction: column-reverse;}
+	#b3 .con1 .incon > ul {width: 100%; padding: 30px;}
+	#b3 .con1 .incon > ul > li {font-size: 16px;}
+	#b3 .con1 .incon img {width: 100%;}
+	
+	#b3 .con2 .incon h3 {font-size: 16px; margin-bottom: 10px;}
+	#b3 .con2 .incon ul li {font-size: 16px;}
+
+	#b3 .con3 .incon > ul > li {font-size: 16px;}
+	#b3 .con3 .incon .imgwrap ul li p {font-size: 15px;}
+
+	#b3 .con4 .incon p {font-size: 16px; margin-bottom: 20px;}
+
+	#b3 .con5 .incon h3 {font-size: 16px; margin-bottom: 10px;}
+	#b3 .con5 .incon ul li {font-size: 16px;}
+}
+
+@media screen and (max-width: 640px) {
+	#b3 .con h2 {font-size: 20px;}
+	
+	#b3 .con1 .incon > ul {padding: 20px;}
+	#b3 .con1 .incon > ul > li {font-size: 14px; margin-bottom: 5px;}
+
+	#b3 .con2 .incon ul {margin-bottom: 20px;}
+	#b3 .con2 .incon ul li {font-size: 14px;}
+	#b3 .con2 .incon .imgwrap img {width: 49%; margin-right: 2%;}
+	#b3 .con2 .incon .imgwrap img:nth-child(2) {margin-right: 0;}
+
+	#b3 .con3 .incon > ul > li {font-size: 14px;}
+	#b3 .con3 .incon .imgwrap ul {flex-wrap: wrap;}
+	#b3 .con3 .incon .imgwrap ul li {width: 49%; margin-right: 2%; margin-bottom: 2%;}
+	#b3 .con3 .incon .imgwrap ul li:nth-child(2n) {margin-right: 0;}
+	#b3 .con3 .incon .imgwrap ul li p {font-size: 14px;}
+
+	#b3 .con4 .incon ul {flex-wrap: wrap;}
+	#b3 .con4 .incon ul li {width: 49%; margin-right: 2%; margin-bottom: 2%;}
+	#b3 .con4 .incon ul li:nth-child(2n) {margin-right: 0;}
+
+	#b3 .con5 .incon {margin-bottom: 30px;}
+	#b3 .con5 .incon h3 {font-size: 14px;}
+	#b3 .con5 .incon ul li {font-size: 14px;}
+}
+/*사업영역 - 레이져사업부*/
+
+
+
+/*사업영역 - 환경사업부*/
+#b4 {}
+#b4 .con {margin-bottom: 80px;}
+#b4 .con:last-child {margin-bottom: 0;}
+#b4 .con h2 {font-size: 30px; position: relative; display: flex; align-items: center; padding-left: 20px; margin-bottom: 30px;}
+#b4 .con h2::after {content: ''; position: absolute; display: block; width: 10px; height: 10px; background-color: #f15a29; left: 0; transform: rotateZ(45deg); border-radius: 2px;}
+
+#b4 .con1 .tab {display: flex; justify-content: space-between; margin-bottom: 50px;}
+#b4 .con1 .tab li {width: 24%; border: 1px solid #aaa; padding: 10px 0; color: #aaa; font-weight: 400; text-align: center; font-size: 18px; cursor: pointer;}
+#b4 .con1 .tab li.selected {background-color: #f15a29; border-color: #f15a29; color: #fff;}
+#b4 .con1 .tabcon .conwrap {display: flex; align-items: center; justify-content: space-between;}
+#b4 .con1 .tabcon .conwrap .imgwrap {width: 40%; display: flex; align-items: stretch; justify-content: space-between;}
+#b4 .con1 .tabcon .conwrap .imgwrap img {width: 49%; border: 1px solid #ddd;}
+#b4 .con1 .tabcon .conwrap .detail {width: 55%;}
+#b4 .con1 .tabcon .conwrap .detail table {border-collapse: collapse; border-top: 2px solid #f15a29; width: 100%;}
+#b4 .con1 .tabcon .conwrap .detail table tr {border-bottom: 1px solid #ddd;}
+#b4 .con1 .tabcon .conwrap .detail table tr th {padding: 10px; background-color: #fff9f5;}
+#b4 .con1 .tabcon .conwrap .detail table tr td {padding: 10px 20px;}
+
+#b4 .con2 .incon {display: flex; justify-content: center; align-items: center; margin-bottom: 50px;}
+#b4 .con2 .incon > img {width: 100%;}
+#b4 .con2 .incon h3 {font-size: 18px; text-align: center; border: 1px solid #ddd; font-weight: 500; width: 29%; padding: 15px 0; border-radius: 2%;}
+#b4 .con2 .incon span {font-size: 18px; font-weight: 600; color: #fff; width: 30px; height: 30px; text-align: center; line-height: 27px; border-radius: 50%; background-color: #f15a29;}
+#b4 .con2 ul li {font-size: 18px; margin-bottom: 15px; font-weight: 400;}
+#b4 .con2 ul li span {width: 30px; height: 30px; background-color: #f15a29; display: inline-block; text-align: center; font-weight: 500; color: #fff; border-radius: 50%; margin-right: 10px; line-height: 30px;}
+
+#b4 .con3 ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#b4 .con3 ul li {width: 32.3%; border: 1px solid #ddd; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; justify-content: center; text-align: center; margin-bottom: 20px; font-size: 18px; font-weight: 400;}
+#b4 .con3 ul li b {color: #f15a29;}
+
+#b4 .con5 .incon {margin-bottom: 50px;}
+#b4 .con5 .incon h4 {font-size: 18px; font-weight: 500; margin-bottom: 20px; display: inline-block; border: 1px solid #f15a29; padding: 5px 15px; color: #f15a29; border-radius: 22px;}
+#b4 .con5 .incon img {width: 100%; border-radius: 20px; border: 1px solid #ddd;}
+#b4 .con5 .incon ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#b4 .con5 .incon ul li {width: 49%; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;}
+#b4 .con5 .incon ul li p {font-size: 18px; font-weight: 500; text-align: center; margin-top: 10px; position: relative; padding-left: 15px;}
+#b4 .con5 .incon ul li p::after {content: ''; width: 5px; height: 5px; position: absolute; background-color: #f15a29; left: 0; top: 50%; transform: translateY(-50%);}
+
+#b4 .con6 h2 {margin-bottom: 30px;}
+#b4 .con6 ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#b4 .con6 ul li {width: 24%; position: relative; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 40px; height: 150px; display: flex; align-items: center; justify-content: center; transition-duration: 0.3s;}
+#b4 .con6 ul li:hover {border: 1px solid #f15a29; transition-duration: 0.3s;}
+#b4 .con6 ul li:hover h3 {background-color: #f15a29; transition-duration: 0.3s;}
+#b4 .con6 ul li:last-child {border: 0;}
+#b4 .con6 ul li h3 {width: 40px; height: 40px; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background-color: #ddd; border-radius: 50%; font-size: 20px; text-align: center; line-height: 40px; color: #fff; transition-duration: 0.3s;}
+#b4 .con6 ul li p {text-align: center; font-weight: 500;}
+
+#b4 .con7 h2 {margin-bottom: 30px;}
+#b4 .con7 ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#b4 .con7 ul li {width: 24%; position: relative; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 40px; height: 150px; display: flex; align-items: center; justify-content: center; transition-duration: 0.3s;}
+#b4 .con7 ul li:hover {border-color: #f15a29; transition-duration: 0.3s;}
+#b4 .con7 ul li:hover h3 {background-color: #f15a29; transition-duration: 0.3s;}
+#b4 .con7 ul li:last-child {border: 0;}
+#b4 .con7 ul li h3 {width: 40px; height: 40px; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background-color: #ddd; border-radius: 50%; font-size: 20px; text-align: center; line-height: 40px; color: #fff; transition-duration: 0.3s;}
+#b4 .con7 ul li p {text-align: center; font-weight: 500;}
+
+#b4 .con8 .tb1 {margin-bottom: 50px;}
+#b4 .con8 .tb table {border-collapse: collapse; width: 100%; border-top: 2px solid #f15a29;}
+#b4 .con8 .tb table th {background-color: #fff9f5; padding: 10px;}
+#b4 .con8 .tb table td {border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; padding: 10px; text-align: center;}
+#b4 .con8 .tb table td:last-child {border-right: 0;}
+#b4 .con8 .tb tr.st td {font-weight: 600; background-color: #f5f5f5; border-top: 1px solid #ddd;}
+
+#b4 .con9 ul {display: flex; justify-content: space-between;}
+#b4 .con9 ul li {width: 49%; display: flex; flex-direction: column; align-items: center;}
+#b4 .con9 ul li img {width: 100%;}
+#b4 .con9 ul li p {font-size: 18px; font-weight: 500; text-align: center; margin-top: 10px; padding-left: 15px; position: relative;}
+#b4 .con9 ul li p::after {content: ''; width: 5px; height: 5px; position: absolute; background-color: #f15a29; left: 0; top: 50%; transform: translateY(-50%);}
+
+@media screen and (max-width: 1200px) {
+	#b4 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#b4 .con {margin-bottom: 50px;}
+	#b4 .con h2 {font-size: 24px; margin-bottom: 20px;}
+
+	#b4 .con1 .tab {margin-bottom: 40px;}
+	#b4 .con1 .tab li {font-size: 16px;}
+	#b4 .con1 .tabcon .conwrap .detail table tr th {font-size: 16px;}
+	#b4 .con1 .tabcon .conwrap .detail table tr td {font-size: 16px;}
+
+	#b4 .con2 ul li {font-size: 16px; margin-bottom: 10px;}
+
+	#b4 .con3 ul li {font-size: 16px;}
+	#b4 .con3 ul li br {display: none;}
+
+	#b4 .con5 .incon h4 {font-size: 16px;}
+	#b4 .con5 .incon ul li p {font-size: 16px;}
+
+	#b4 .con6 ul li {width: 49%; margin-right: 2%;}
+	#b4 .con6 ul li:nth-child(2n) {margin-right: 0;}
+	#b4 .con6 ul li h3 {width: 35px; height: 35px; font-size: 18px; line-height: 35px;}
+	#b4 .con6 ul li p {font-size: 16px;}
+
+	#b4 .con7 ul li {width: 49%; margin-right: 2%;}
+	#b4 .con7 ul li:nth-child(2n) {margin-right: 0;}
+	#b4 .con7 ul li h3 {width: 35px; height: 35px; font-size: 18px; line-height: 35px;}
+	#b4 .con7 ul li p {font-size: 16px;}
+
+	#b4 .con8 .tb table th {font-size: 16px;}
+	#b4 .con8 .tb table td {font-size: 16px;}
+
+	#b4 .con9 ul li p {font-size: 16px;}
+}
+
+@media screen and (max-width: 800px) {
+	#b4 .con1 .tabcon .conwrap {flex-direction: column;}
+	#b4 .con1 .tabcon .conwrap .imgwrap {width: 50%; margin-bottom: 20px;}
+	#b4 .con1 .tabcon .conwrap .detail {width: 100%;}
+}
+
+@media screen and (max-width: 640px) {
+	#b4 .con {margin-bottom: 40px;}
+	#b4 .con h2 {font-size: 20px; margin-bottom: 10px;}
+
+	#b4 .con1 .tab {flex-wrap: wrap;}
+	#b4 .con1 .tab li {width: 49%; margin-right: 2%; margin-bottom: 2%; font-size: 14px;}
+	#b4 .con1 .tab li:nth-child(2n) {margin-right: 0;}
+	#b4 .con1 .tabcon .conwrap .detail table tr th {font-size: 14px;}
+	#b4 .con1 .tabcon .conwrap .detail table tr td {font-size: 14px;}
+	
+	#b4 .con2 ul li {font-size: 14px; margin-bottom: 7px;}
+	#b4 .con2 ul li span {width: 25px; height: 25px; line-height: 25px; font-size: 14px;}
+
+	#b4 .con3 ul li {width: 49%; margin-right: 2%; margin-bottom: 2%; font-size: 14px;}
+	#b4 .con3 ul li:nth-child(2n) {margin-right: 0;}
+
+	#b4 .con5 .incon h4 {font-size: 14px;}
+	#b4 .con5 .incon ul li p {font-size: 14px;}
+
+	#b4 .con6 h2 {margin-bottom: 30px;}
+	#b4 .con6 ul li h3 {width: 30px; height: 30px; line-height: 30px; font-size: 16px; top: -15px;}
+	#b4 .con6 ul li {height: 140px; font-size: 14px; margin-bottom: 20px;}
+	#b4 .con6 ul li p {font-size: 14px;}
+
+	#b4 .con7 h2 {margin-bottom: 30px;}
+	#b4 .con7 ul li h3 {width: 30px; height: 30px; line-height: 30px; font-size: 16px; top: -15px;}
+	#b4 .con7 ul li {height: 140px; font-size: 14px; margin-bottom: 20px;}
+	#b4 .con7 ul li p {font-size: 14px;}
+	#b4 .con7 ul li p br {display: none;}
+
+	#b4 .con8 .tb table th {font-size: 14px;}
+	#b4 .con8 .tb table td {font-size: 14px; padding: 5px;}
+
+	#b4 .con9 ul li p {font-size: 14px;}
+}
+/*사업영역 - 환경사업부*/
+
+
+
+/*프로젝트 수행이력 - 2020 이후*/
+#e1 {}
+#e1 > img {width: 100%;}
+#e1 .conwrap {display: flex; justify-content: space-between; margin-top: 50px;}
+#e1 .conwrap h2 {width: 45%; font-size: 100px; text-align: center; color: #ddd;}
+#e1 .conwrap .project {width: 50%; margin-top: 50px;}
+#e1 .conwrap .project .con {display: flex; margin-bottom: 50px; padding-bottom: 50px; border-bottom: 1px dashed #ddd;}
+#e1 .conwrap .project .con:last-child {border-bottom: 0; margin-bottom: 0; padding-bottom: 0;}
+#e1 .conwrap .project .con h3 {margin-right: 50px; font-size: 24px; color: #f15a29;}
+#e1 .conwrap .project .con ul li {font-size: 18px; font-weight: 400; margin-bottom: 5px;}
+#e1 .conwrap .project .con ul li:last-child {margin-bottom: 0;}
+
+@media screen and (max-width: 1200px) {
+	#e1 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#e1 .conwrap h2 {font-size: 80px;}
+	#e1 .conwrap .project .con h3 {font-size: 22px;}
+	#e1 .conwrap .project .con ul li {font-size: 16px;}
+}
+
+@media screen and (max-width: 700px) {
+	#e1 .conwrap {flex-direction: column; margin-top: 30px;}
+	#e1 .conwrap h2 {width: 100%; font-size: 60px; text-align: left;}
+	#e1 .conwrap .project {width: 100%; margin-top: 30px;}
+	#e1 .conwrap .project .con {margin-bottom: 30px; padding-bottom: 30px;}
+	#e1 .conwrap .project .con h3 {font-size: 20px;}
+	#e1 .conwrap .project .con ul li {font-size: 14px;}
+}
+/*프로젝트 수행이력 - 2020 이후*/
+
+
+
+
+/*프로젝트 수행이력 - 2020 이전*/
+#e2 {}
+#e2 > img {width: 100%;}
+#e2 .conwrap {display: flex; justify-content: space-between; margin-top: 50px;}
+#e2 .conwrap h2 {width: 45%; font-size: 100px; text-align: center; color: #ddd;}
+#e2 .conwrap .project {width: 50%; margin-top: 50px;}
+#e2 .conwrap .project .con {display: flex; margin-bottom: 50px; padding-bottom: 50px; border-bottom: 1px dashed #ddd;}
+#e2 .conwrap .project .con:last-child {border-bottom: 0; margin-bottom: 0; padding-bottom: 0;}
+#e2 .conwrap .project .con h3 {margin-right: 50px; font-size: 24px; color: #f15a29;}
+#e2 .conwrap .project .con ul li {font-size: 18px; font-weight: 400; margin-bottom: 5px;}
+#e2 .conwrap .project .con ul li:last-child {margin-bottom: 0;}
+
+@media screen and (max-width: 1200px) {
+	#e2 {padding: 0 2%;}
+}
+
+@media screen and (max-width: 960px) {
+	#e2 .conwrap h2 {font-size: 80px;}
+	#e2 .conwrap .project .con h3 {font-size: 22px;}
+	#e2 .conwrap .project .con ul li {font-size: 16px;}
+}
+
+@media screen and (max-width: 700px) {
+	#e2 .conwrap {flex-direction: column; margin-top: 30px;}
+	#e2 .conwrap h2 {width: 100%; font-size: 60px; text-align: left;}
+	#e2 .conwrap .project {width: 100%; margin-top: 30px;}
+	#e2 .conwrap .project .con {margin-bottom: 30px; padding-bottom: 30px;}
+	#e2 .conwrap .project .con h3 {font-size: 20px;}
+	#e2 .conwrap .project .con ul li {font-size: 14px;}
+}
+/*프로젝트 수행이력 - 2020 이전*/
+
+	

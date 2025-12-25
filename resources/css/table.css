@@ -1,0 +1,32 @@
+/* 리스트 */
+.tbl-stat {clear:both; width:100%; border-top:#000 2px solid; border-collapse: collapse; border-spacing:0px;table-layout:fixed; font-size:16px}
+/* .tbl-stat caption { font-size:1px; line-height:1px; text-indent:-1000em; visibility:hidden; width:1px; height:1px; overflow:hidden;} */
+.tbl-stat thead th, .tbl-stat tbody th {padding:20px; border:solid #e0e0e0; border-width:0 1px 1px 1px; background:#f6f6f6; color:#333; word-wrap:break-word; }
+.tbl-stat tbody th {background:#fcfcfc}
+.tbl-stat thead th:first-child, .tbl-stat tbody th:first-child,.tbl-stat tbody td:first-child, .tbl-stat tfoot td:first-child {border-left:0px;}
+.tbl-stat thead th:last-child, .tbl-stat tbody th:last-child, .tbl-stat tbody td:last-child, .tbl-stat tfoot td:last-child { border-right:0}
+.tbl-stat tbody td {padding:20px; text-align:left;  border:1px solid #e0e0e0; border-width:1px;word-break: break-all; line-height:1.6}
+.tbl-stat .left,.tbl-stat .l {padding-left:20px}/*여백 재설정이 필요할 경우*/
+.tbl-stat tfoot th {background:#f6f6f6; border:solid #e0e0e0; border-width:0 0 1px 0px; text-align:center; padding:10px 0; color:#e6360d;}
+.tbl-stat tfoot td {background:#f6f6f6; border:solid #e0e0e0; border-width:0 0 1px 1px; text-align:center;  padding:10px 0; color:#333; font-weight:bold;}
+.tbl-stat tbody td h2 { font-size:18px; font-weight:bold}
+
+/* th 정렬 */
+.tbl-stat thead th.sort a {display:inline-block;  padding-right:15px; margin:0px 3px; font-weight:bold;}
+.tbl-stat thead th.sort a:hover, .tbl-stat thead th a:focus, .tbl-stat thead th.sort a:active {text-decoration:underline;color:#e6360d; }
+.tbl-stat thead th.sort_up a {color:#e6360d;  padding-right:15px; margin:0px 3px}
+.tbl-stat thead th.sort_up a:hover, .tbl-stat thead th.sort_up a:focus, .tbl-stat thead th.sort_up a:active {text-decoration:underline;}
+.tbl-stat thead th.sort_dw a  {color:#e6360d;  padding-right:15px; margin:0px 3px}
+.tbl-stat thead th.sort_dw a:hover, .tbl-stat thead th.sort_dw a:focus, .tbl-stat thead th.sort_dw a:active {text-decoration:underline;}
+.tbl-stat td.sort {color:#e6360d; font-weight:bold;}
+
+/* 포인트 색 */
+.tbl-stat .point {background:#f8f5f3;}
+
+
+@media screen and (max-width: 600px) {
+	.tbl-stat tbody td { padding:10px}
+	
+}
+
+
