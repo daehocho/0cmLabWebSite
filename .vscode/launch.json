@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open BusinessView.html",
-            "file": "/Users/daeho/Documents/0cmLabWebSite/views/BusinessView.html"
+            "file": "/Users/daeho/0cmLabWebSite/views/BusinessView.html"
         }
     ]
 }
