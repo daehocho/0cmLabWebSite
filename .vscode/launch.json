@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open BusinessView.html",
-            "file": "/Users/daeho/0cmLabWebSite/views/BusinessView.html"
+            "name": "Open index.html",
+            "file": "/Users/daeho/0cmLabWebSite/views/index.html"
         }
     ]
 }
