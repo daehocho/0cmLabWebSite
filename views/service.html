@@ -70,9 +70,12 @@
             <div id="login-box3"></div><!-- #login-box 내용 -->
             <div id="m-lnb">
                 <ul data-depth="1" class="depth1" data-idx="1">
-                    <li><a href="../index.html" target="_self">주요 연혁</a></li>
+                    <li><a href="../index.html" target="_self">회사 소개</a></li>
                     <li><a href="../views/product.html" target="_self">제품 소개</a></li>
                     <li><a href="../views/service.html" target="_self">서비스 소개</a></li>
+                    <li><a href="../views/performance.html" target="_self">납품 실적</a></li>
+                    <li><a href="../views/ip.html" target="_self">지식재산권</a></li>
+                    <li><a href="../views/contact.html" target="_self">문의</a></li>
                 </ul>
             </div>
         </section>
@@ -90,9 +93,12 @@
             <div class="lnb-line">
                 <div id="lnb">
                     <ul data-depth="1" class="depth1" data-idx="1">
-                        <li><a href="../index.html" target="_self">주요 연혁</a></li>
+                        <li><a href="../index.html" target="_self">회사 소개</a></li>
                         <li><a href="../views/product.html" target="_self">제품 소개</a></li>
                         <li><a href="../views/service.html" target="_self">서비스 소개</a></li>
+                        <li><a href="../views/performance.html" target="_self">납품 실적</a></li>
+                        <li><a href="../views/ip.html" target="_self">지식재산권</a></li>
+                        <li><a href="../views/contact.html" target="_self">문의</a></li>
                     </ul>
                 </div>
 
@@ -117,169 +123,106 @@
     </div>
     <!--}}}서브 상단-->
 
-    <section id="container-box" class="clearfix">
-        <!-- {{{페이지 경로 -->
-        <div class="select-nav-wrapper">
-            <a href="/" class="home"><img src="../resources/images/home_btn.png" alt="" title=""></a>
-            <div class="select-nav">
-                <div class="select d1">
-                    <span class="down"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                    <button>사업영역</button>
-                    <ul>
-                        <li><a href="/theme/sample20/html/a1.php" target="_self">회사소개</a></li>
-                        <li><a href="/theme/sample20/html/b1.php" target="_self">사업영역</a></li>
-                        <li><a href="/bbs/board.php?bo_table=c1_1" target="_self">제품소개</a></li>
-                        <li><a href="/bbs/board.php?bo_table=d1_1" target="_self">APPLICATION</a></li>
-                        <li><a href="/theme/sample20/html/e1.php" target="_self">프로젝트 수행이력</a></li>
-                        <li><a href="/bbs/write.php?bo_table=f1" target="_self">고객지원</a></li>
-                    </ul>
-                </div>
-                <div class="select d2">
-                    <span class="down"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                    <button>
-                        <span class="t1">환경사업부</span>
-                    </button>
-                    <ul>
-                        <li>
-                            <a href="/theme/sample20/html/b1.php" target="_self">비전사업부</a>
-                            <ul>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/theme/sample20/html/b2.php" target="_self">로봇&모션컨트롤</a>
-                            <ul>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/theme/sample20/html/b3.php" target="_self">레이저사업부</a>
-                            <ul>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/theme/sample20/html/b4.php" target="_self">환경사업부</a>
-                            <ul>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="share-area">
-                <div class="hide-wrap">
-                    <div class="hide-area">
-                        <ul>
-                            <li><a target="_blank" id="facebook" onClick="snsModule.facebook();return false;"
-                                    title="페이스북"><img src="../resources/images/share_facebook.png" alt=""></a></li>
-                            <li><a target="_blank" id="twitter" onClick="snsModule.twitter();return false;"
-                                    title="트위터"><img src="../resources/images/share_twitter.png" alt=""></a></li>
-                            <li><a href="#" class="copy-url"><img src="../resources/images/share_link.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <button type="button" class="share-btn">공유하기</button>
-            </div>
-        </div>
-        <!-- }}}페이지 경로 -->
-        <script>
-            $(function () {
-                $('.copy-url').click(function (e) {
-                    e.preventDefault();
-                    var url = window.location.href;
-                    alert(url);
-                    var tempElem = document.createElement('textarea');
-                    tempElem.value = url;
-                    document.body.appendChild(tempElem);
-                    tempElem.select();
-                    tempElem.setSelectionRange(0, 9999);
-                    document.execCommand("copy");
-                    document.body.removeChild(tempElem);
-                });
+    <script>
+        $(function () {
+            $('.copy-url').click(function (e) {
+                e.preventDefault();
+                var url = window.location.href;
+                alert(url);
+                var tempElem = document.createElement('textarea');
+                tempElem.value = url;
+                document.body.appendChild(tempElem);
+                tempElem.select();
+                tempElem.setSelectionRange(0, 9999);
+                document.execCommand("copy");
+                document.body.removeChild(tempElem);
             });
+        });
 
 
-            $(window).scroll(function (e) {
-                if ($(this).scrollTop() > 5) {
-                    $('body').addClass('scrolled');
-                } else {
-                    $('body').removeClass('scrolled');
-                }
-            });
+        $(window).scroll(function (e) {
+            if ($(this).scrollTop() > 5) {
+                $('body').addClass('scrolled');
+            } else {
+                $('body').removeClass('scrolled');
+            }
+        });
 
 
+        var share = false;
+        $(".share-btn").on("click", function () {
+            if (share == false) {
+                $(this).addClass("active");
+                //shareOpen();
+                share = true;
+            } else {
+                $(this).removeClass("active");
+                //shareClose();
+                share = false;
+            }
+            $(this).blur();
+        })
+    </script>
+
+    <script>
+        var es_step = "Expo.ease";
+        $(function () {
             var share = false;
             $(".share-btn").on("click", function () {
                 if (share == false) {
                     $(this).addClass("active");
-                    //shareOpen();
+                    shareOpen();
                     share = true;
                 } else {
                     $(this).removeClass("active");
-                    //shareClose();
+                    shareClose();
                     share = false;
                 }
                 $(this).blur();
             })
-        </script>
 
-        <script>
-            var es_step = "Expo.ease";
-            $(function () {
-                var share = false;
-                $(".share-btn").on("click", function () {
-                    if (share == false) {
-                        $(this).addClass("active");
-                        shareOpen();
-                        share = true;
-                    } else {
-                        $(this).removeClass("active");
-                        shareClose();
-                        share = false;
-                    }
-                    $(this).blur();
-                })
-
-                function dimmed(dimmedName, num, display) {
-                    TweenMax.to($(dimmedName), 0.3, {
-                        opacity: num,
-                        display: display,
-                        ease: es_step
-                    });
-                }
-
-                function shareOpen() {
-                    TweenMax.to($(".hide-area"), .3, {
-                        left: 0,
-                        ease: es_step
-                    });
-                }
-
-                function shareClose() {
-                    TweenMax.to($(".hide-area"), .3, {
-                        left: 200,
-                        ease: es_step
-                    });
-                }
-
-
-            });
-        </script>
-
-        <script>
-            $(function () {
-                $(window).scroll(function (e) {
-                    if ($('body').scrollTop() > 20 || $('html').scrollTop() > 20) {
-                        $('#header').addClass('scrolled');
-                        $('#open-button').addClass('scrolled');
-                    } else {
-                        $('#header').removeClass('scrolled');
-                        $('#open-button').removeClass('scrolled');
-                    }
+            function dimmed(dimmedName, num, display) {
+                TweenMax.to($(dimmedName), 0.3, {
+                    opacity: num,
+                    display: display,
+                    ease: es_step
                 });
+            }
+
+            function shareOpen() {
+                TweenMax.to($(".hide-area"), .3, {
+                    left: 0,
+                    ease: es_step
+                });
+            }
+
+            function shareClose() {
+                TweenMax.to($(".hide-area"), .3, {
+                    left: 200,
+                    ease: es_step
+                });
+            }
 
 
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function (e) {
+                if ($('body').scrollTop() > 20 || $('html').scrollTop() > 20) {
+                    $('#header').addClass('scrolled');
+                    $('#open-button').addClass('scrolled');
+                } else {
+                    $('#header').removeClass('scrolled');
+                    $('#open-button').removeClass('scrolled');
+                }
             });
-        </script>
-    </section>
+
+
+        });
+    </script>
     <section class="content_wrap">
         <div class="txtCon">
             <div id="b4">
